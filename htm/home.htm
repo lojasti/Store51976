@@ -1,0 +1,147 @@
+<!--home -->
+<script src='<PathTo file="htm/js/smartmodal-min.js">'></script>
+
+<!-- Template for product quantity in cart -->
+<textarea id=cartQuantityTemplate style=display:none>
+  <div id="dynCartAdd<prodId>" class="dynCartAdd hidethis" onclick="dynCart$.changeQty(<prodId>,1)"><dynCartAdd></div>
+  <div id="dynCartQtyPanel<prodId>" class="dynCartQtyPanel hidethis">
+    <svg class=dynCartQtyDel viewBox="0 0 24 24" onclick="dynCart$.stepQty(<prodId>,false)"><path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm5 11h-10v-2h10v2z"/></svg>
+    <input type=number id="dynCartQty<prodId>" prodid="<prodId>" value="<cartprodqty>" oriValue="<cartprodqty>" maxlength=2 oninput="this.value=this.value.replace(/[^\d+]/,'').substring(0,3)" onkeyup="delayExec(function(){dynCart$.inputQty(<prodId>);},1000)">
+    <svg class=dynCartQtyAdd viewBox="0 0 24 24" onclick="dynCart$.stepQty(<prodId>,true)"><path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm5 11h-4v4h-2v-4h-4v-2h4v-4h2v4h4v2z"/></svg>
+  </div>
+  <div id="dynCartDone<prodId>" class="dynCartDone hidethis"><div class="skeleton-item"><a onclick="Cart$.fnShowCartCheckout();"><dynCartDone></a></div></div>
+</textarea>
+
+<main>
+    <!-- Product Sales -->
+    <div class="main-product-block-container" id="home-sales-section">
+      <div class="main-product-block-container-title">
+       <h1><var key="theme-4-home-title-sale-txt"></var></h1>
+       <div  class="main-product-block-container-title-underline"></div>
+      </div>
+      <div class="home-main-carrossel1 main-product-block-container-products">
+        <div class="carousel2 carousel-1 js-flickity" data-flickity-options='{"pageDots":false,"wrapAround":true,"autoPlay":false,"cellAlign":"left","resize":true}'>
+          <div class="carousel-cell2"><div class="main-product-block-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div></div>
+          <div class="carousel-cell2"><div class="main-product-block-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div></div>
+          <div class="carousel-cell2"><div class="main-product-block-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div></div>
+          <div class="carousel-cell2"><div class="main-product-block-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div></div>
+          <div class="carousel-cell2"><div class="main-product-block-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div></div>
+        </div>  
+      </div>
+    </div>
+    <!-- 3 Banners Separator -->
+    <div class="main-banner-separator">
+      <div>
+        <a href="<banner-redir 12>" target="_self">
+          <img src="<banner-image 12>" alt="<banner-alt 12>" width="418" height="500">
+        </a>
+      </div>
+      <div>
+        <a href="<banner-redir 13>" target="_self">
+          <img src="<banner-image 13>" alt="<banner-alt 13>" width="418" height="500">
+        </a>
+      </div>
+      <div>
+        <a href="<banner-redir 14>" target="_self">
+          <img src="<banner-image 14>" alt="<banner-alt 14>" width="418" height="500">
+        </a>
+      </div>
+    </div>
+    <!-- Product Release -->
+    <div class="main-product-block-container" id="home-release-section">
+      <div class="main-product-block-container-title">
+       <h2><var key="theme-4-home-title-releases-txt"></var></h2>
+       <div  class="main-product-block-container-title-underline"></div>
+      </div>
+      <div class="home-main-carrossel1 main-product-block-container-products">
+        <div class="carousel2 carousel-2 js-flickity" data-flickity-options='{"pageDots":false,"wrapAround":true,"autoPlay":false,"cellAlign":"left","resize":true}'>
+          <div class="carousel-cell2"><div class="main-product-block-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div></div>
+          <div class="carousel-cell2"><div class="main-product-block-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div></div>
+          <div class="carousel-cell2"><div class="main-product-block-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div></div>
+          <div class="carousel-cell2"><div class="main-product-block-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div></div>
+          <div class="carousel-cell2"><div class="main-product-block-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div></div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 Banners Separator -->
+    <div class="main-banner-separator">
+      <div>
+        <a href="<banner-redir 15>" target="_self">
+          <img src="<banner-image 15>" alt="<banner-alt 15>" width="418" height="500">
+        </a>
+      </div>
+      <div>
+        <a href="<banner-redir 16>" target="_self">
+          <img src="<banner-image 16>" alt="<banner-alt 16>" width="418" height="500">
+        </a>
+      </div>
+      <div>
+        <a href="<banner-redir 17>" target="_self">
+          <img src="<banner-image 17>" alt="<banner-alt 17>" width="418" height="500">
+        </a>
+      </div>
+    </div>
+    <!-- Product Highlights -->
+    <div class="main-product-block-container" id="home-featured-section">
+      <div class="main-product-block-container-title">
+       <h2><var key="theme-4-home-title-highlights-txt"></var></h2>
+       <div  class="main-product-block-container-title-underline"></div>
+      </div>
+      <div class="home-main-carrossel1 main-product-block-container-products">
+        <div class="carousel2 carousel-3 js-flickity" data-flickity-options='{"pageDots":false,"wrapAround":true,"autoPlay":false,"cellAlign":"left","resize":true}'>
+          <div class="carousel-cell2"><div class="main-product-block-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div></div>
+      	  <div class="carousel-cell2"><div class="main-product-block-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div></div>
+      	  <div class="carousel-cell2"><div class="main-product-block-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div></div>
+      	  <div class="carousel-cell2"><div class="main-product-block-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div></div>
+      	  <div class="carousel-cell2"><div class="main-product-block-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Info Separator -->
+  <div class="main-info-container">
+    <div class="main-info-separator">
+      <div class="main-info-separator-child">
+        <a href="<url-help>#Pagamento">
+          <div class="main-info-separator-img"><img src="<storePath>images/icon-banner-payment.svg" alt="payment" width="50" height="50"></div>
+          <h3><var key="theme-4-home-title-payments-txt"></var></h3>
+          <p><var key="theme-4-home-subtitle-payments-txt"></p>
+        </a>
+      </div>
+      <div class="main-info-separator-child">
+        <a href="<url-help>#Entregas">
+          <div class="main-info-separator-img"><img src="<storePath>images/icon-banner-delivery.svg" alt="delivery" width="50" height="50"></div>
+          <h3><var key="theme-4-home-title-delivery-txt"></var></h3>
+          <p><var key="theme-4-home-subtitle-delivery-txt"></var></p>
+        </a>
+      </div>
+      <div class="main-info-separator-child">
+        <a href="<url-help>#Seguranca">
+          <div class="main-info-separator-img"><img src="<storePath>images/icon-banner-security.svg" alt="security" width="50" height="50"></div>
+          <h3><var key="theme-4-home-title-security-txt"></var></h3>
+          <p><var key="theme-4-home-subtitle-security-txt"></var></p>
+        </a>
+      </div>
+      <div class="main-info-separator-child">
+        <a href="<url-contact>">
+          <div class="main-info-separator-img"><img src="<storePath>images/icon-banner-contact.svg" alt="security" width="50" height="50"></div>
+          <h3><var key="theme-4-home-title-doubt-txt"></var></h3>
+          <p><var key="theme-4-home-subtitle-doubt-txt"></var></p>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Banners Slideshow -->
+<textarea id="FC-HideHomeBanners" style="display:none;">
+  <div class="carouselBanner js-flickity" id="home-banner-flickty"></div>
+</textarea>
+<script>
+var aBannersHome=<banners-json info="1" max="6" pos="11">;
+FCLib$.onLoaded(function(){skeletonLib$.removeClass("loading-skeleton",document);});
+var carousel1 = document.querySelector('.carousel-1');var flkty1 = new Flickity(carousel1);
+var carousel2 = document.querySelector('.carousel-2');var flkty2 = new Flickity(carousel2);
+var carousel3 = document.querySelector('.carousel-3');var flkty3 = new Flickity(carousel3);
+FCLib$.onLoaded(function(){flkty1.resize();flkty2.resize();flkty3.resize();});
+</script>
