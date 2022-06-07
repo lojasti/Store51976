@@ -1,0 +1,34 @@
+/* Estilos personalizados */
+.EstPassoCompraDiv{display:none;color:#212121}
+.EstContinuarComprando{display:none}
+#TabBancos{display:none}
+.SecurityLogos b{font-weight:bold;margin:0 0 0 -80px}
+.header-ped-line{margin-bottom:0px}
+.checkout-header-logo{display:grid;align-items:center;justify-content:center;padding:15px 0;background:<tag-FCCSSMainColor>}
+
+/* Footer */
+.FCCheckout .pwdEye{position:relative;top:12px}
+#idTableSenhaFC .pwdEye{position:relative;top:11px;display:block}
+.checkout-footerCompanyBoxFC{width:100%;background:#fcfcfc;padding:30px 0;display:flex;display:-webkit-flex;align-items:center;-webkit-align-items:center;justify-content:center;-webkit-justify-content:center;flex-direction:column;-webkit-flex-direction:column;text-align:center;line-height:18px;}
+.checkout-footerCompanyBoxFC p{font-size:0.8rem}
+.checkout-footerCompanyBoxFC div p{font-size:0.75rem}
+html,body{height:100%;margin:0}
+.FCCheckout{display:table;height:100%;width:100%}
+.FCCheckout .ped-global-fixed{display:table-row;height:1px}
+.FCCheckout .ped-global-fixed.ped-global-expand{height:100%}
+.checkout-footer-container-box{width:100%;display:flex;display:-webkit-flex;flex-direction:column;-webkit-flex-direction:column;padding:0 15px;}
+.checkout-footer-container-box-company{text-align:center;}
+.checkout-footer-container-box-security{font-weight:bold;font-size:1rem;letter-spacing:-1px;text-align:center;margin-top:20px;text-transform:uppercase;}
+.checkout-footer-container-box-security p{font-weight:bold;margin-bottom:5px;}
+.CompanyAddressLine2 .CompanyZipcode{margin-left:5px;}
+.CompanyAddressLine2{margin-left:-5px!important;}
+
+/* Desktop */
+@media only screen and (min-width:1025px){
+.checkout-footer-container-box{max-width:1306px;flex-wrap:nowrap;-webkit-flex-wrap:nowrap;flex-direction:row;-webkit-flex-direction:row;text-align:center;margin:0 auto;}
+.checkout-footer-container-box-company{width:50%;text-align:left;}
+.checkout-footer-container-box-security{width:50%;text-align:right;margin-top:0;}
+}
+@media only screen and (min-width:1921px){
+body{max-width:1920px!important;margin:0 auto;}
+}
