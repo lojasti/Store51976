@@ -1,0 +1,66 @@
+<style>
+/* Init mixtiup - Categories */
+.FCCategories .CatListFC li a{color:#212121}
+.FCCategories .CatListFC li a:hover{text-decoration:underline}
+.FCCategories .CatListFC li.Cat0FC a{font-weight:700}
+.sort{cursor:pointer}
+.FCBtnMixit{display:inline-block;vertical-align:middle;margin:5px;padding:8px;box-sizing:border-box;border-top:1px solid transparent;border-radius:3px;background:#e2e2e2;color:#212121;border-bottom:1px solid #f2f2f2}
+#Container .mix{display:none}
+.activeCat{color:#FFFFFF}
+.control:hover{background:#3f3f3f;}
+.control[data-filter]{position:absolute;width:10px;height:10px;top:calc(50% - 6px);left:calc(50% - 6px);border:2px solid currentColor;border-radius:2px;background:currentColor;transition:background-color 150ms,border-color 150ms;}
+.control[data-sort]{position:absolute;width:10px;height:10px;border-top:2px solid;border-left:2px solid;top:calc(50% - 6px);left:calc(50% - 6px);transform:translateY(1px) rotate(45deg);}
+.control[data-sort*=":desc"]:after{transform:translateY(-4px) rotate(-135deg);}
+.mixitup-control-active[data-filter]:after{background:transparent;}
+.control:first-of-type{border-radius:3px 0 0 3px;}
+.control:last-of-type{border-radius:0 3px 3px 0;}
+.control[data-filter] + .control[data-sort]{margin-left:.75rem;}
+.mixitup-control-active{background:#212121;color:#ffffff;}
+.CatSeeMoreFC{background:#212121}
+
+/* Departments - Categorias.htm */
+#SubCatTemplate{display:none}
+ul{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;-webkit-padding-start:0;-moz-margin-before:0;-moz-margin-after:0;-moz-margin-start:0;-moz-margin-end:0;-moz-padding-start:0}
+.CatContainerFC{border:1px solid #666666;min-width:255px;height:280px;box-sizing:border-box;padding:70px 0 0 0;margin:0 5px;float:left;position:relative;background-repeat:no-repeat;background-size:270px;margin-top:25px;cursor:pointer}
+.CatListFC{background:#FFFFFF;width:100%;height:100%;opacity:0.9;margin:0;padding:10px 0 0 0}
+.CatListFC li{list-style:none;padding:7px 6px 7px 12px;box-sizing:border-box;text-align:left} 
+.CatListFC li a{text-decoration:none}
+.CatListFC .MainCatFC{font-size:18px;font-weight:bold}
+.CatListFC .SubCatFC{padding-left:20px}
+.CatSeeMoreFC{position:absolute;bottom:0;width:100%;height:30px;box-sizing:border-box;padding:7px 10px;text-align:left}
+.CatSeeMoreFC a{color:#FFFFFF}
+.CatListFC li:nth-child(n+6){display:none}
+.Cat0FC{font-size:16px;text-transform:uppercase}
+.Cat1FC{font-size:15px}
+.Cat2FC{font-size:15px;padding-left:25px!important}
+.DestaquesPage .home-price{padding:15px 0 0 0!important}
+
+@media only screen and (max-width:1024px){
+  .categories-menu-buttons-container,.categories-menu-container{display:flex;display:-webkit-flex;flex-flow:column;-webkit-flex-flow:column;justify-content:flex-start;-webkit-justify-content:flex-start}
+}
+
+@media only screen and (min-width:1025px){
+  .categories-menu-buttons-container,.categories-menu-container{display:flex;display:-webkit-flex;flex-flow:row wrap;-webkit-flex-flow:row wrap;justify-content:flex-start;-webkit-justify-content:flex-start}
+}
+</style>
+
+<div class="controls">
+  <div class="FCBtnMixit sort" data-sort="default"><var key="cat-more-popular"></var></div>
+  <div class="FCBtnMixit sort" data-sort="name:asc"><var key="cat-more-brand-a-to-z"></var></div>
+  <div class="FCBtnMixit sort" data-sort="name:desc"><var key="cat-more-brand-z-to-a"></var></div>
+  <div class="FCBtnMixit sort" data-sort="random"><var key="cat-more-random"></var></div>  
+</div>
+<div class="container">
+  <div class="categories-menu-container">
+    <ListPathCat out="13" id="-1">
+  </div>
+</div>
+<script src='<PathTo file="htm/js/mixitup.js">'></script>
+<script>
+var catBlock = document.getElementsByClassName("CatContainerFC");  
+for(var i = 0; i < catBlock.length; i++){
+  catBlock[i].classList.add("mix");    
+}
+var containerEl = document.querySelector('.container');
+var mixer = mixitup(containerEl);
+</script>
