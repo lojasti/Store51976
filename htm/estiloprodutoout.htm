@@ -1,0 +1,90 @@
+<p252>
+<div class="home-prod-container-sales-new-day loading-skeleton" <DataAttribute> id="DivProd<prodId>">
+  <div class="home-prod-container-sales-new-day-block-all">
+    <div class="home-prod-container-sales-new-day-block-1" onclick="fcSpy$.openSmartModal('<URLProd>');">
+      <div class="DivHomeImagemProd skeleton-item" id="DivImagemProdDouble<prodId>" onclick="fcSpy$.openSmartModal('<URLProd>');" tabIndex="0"></div>
+    </div>
+    <div class="home-prod-container-sales-new-day-block-2">
+      <div onclick="fcSpy$.openSmartModal('<URLProd>');">
+        <div class="skeleton-item">
+         <h2><var key="theme-4-home-title-offer-of-the-day-txt"></var></h2>
+         <div  class="main-product-block-container-title-underline"></div>
+          <div class="home-prod-name text-overflow"><prodName></div>
+        </div>
+        <div class="home-prod-price skeleton-item">
+          <div id="idProdPrice<prodId>"></div> 
+          <div class="PriceAVistaLista" id="ProdDesc<prodId>"></div>
+        </div>
+      </div>
+      <div id="dynCartContainer<prodId>" class=dynCartQty dyn-cart-qty="<prodId>" dyn-cart-stock="0<prodStock>" dyn-cart-a1="<desc1Val>" dyn-cart-a2="<desc2Val>" dyn-cart-a3="<desc3Val>" dyn-cart-d1="<descD1Val>" dyn-cart-d2="<descD2Val>" dyn-cart-d3="<descD3Val>" dyn-cart-color="<colorVal>" dyn-cart-price="<prodPriceNum>"></div>
+    </div>
+  </div>
+</div>
+<script>
+FCLib$.onReady(function(){sF$.fnProdOut("<prodImgMain>","<prodImgDet>","<URLProd>",<prodId>,"<prodNameFU>",<prodPriceNum>,<prodPriceOri>,"<prodRef>",<prodMaxInstallmentNum>)});
+</script>
+</p252>
+
+<p254>
+<div class="home-prod-container loading-skeleton DivHomeProd DivHotSiteProd smoothShow home-container-products-child" <DataAttribute> id="DivProd<prodId>">
+  <div onclick="fcSpy$.openSmartModal('<URLProd>');">
+    <div class="DivHomeImagemProd skeleton-item" id="DivImagemProdDouble<prodId>" onclick="fcSpy$.openSmartModal('<URLProd>');" tabIndex="0"></div>
+    <div class="skeleton-item"><div class="home-prod-name text-overflow"><prodName></div></div>
+    <div class="home-prod-price skeleton-item">
+      <div id="idProdPrice<prodId>"></div> 
+      <div class="PriceAVistaLista" id="ProdDesc<prodId>"></div>
+    </div>
+  </div>
+  <div class="dynCartDisabled dynCartQty hidethis"><div class=dynCartAdd onclick="fcSpy$.openSmartModal('<URLProd>');"><dynCartDisabled></div></div>
+  <div id="dynCartContainer<prodId>" class=dynCartQty dyn-cart-qty="<prodId>" dyn-cart-stock="0<prodStock>" dyn-cart-a1="<desc1Val>" dyn-cart-a2="<desc2Val>" dyn-cart-a3="<desc3Val>" dyn-cart-d1="<descD1Val>" dyn-cart-d2="<descD2Val>" dyn-cart-d3="<descD3Val>" dyn-cart-color="<colorVal>" dyn-cart-price="<prodPriceNum>"></div>
+</div>
+<script>
+FCLib$.onReady(function(){
+  sF$.fnProdOut("<prodImgMain>","<prodImgDet>","<URLProd>",<prodId>,"<prodNameFU>",<prodPriceNum>,<prodPriceOri>,"<prodRef>",<prodMaxInstallmentNum>);
+
+    /*remove image link*/
+    function removeImgLink(){
+      document.getElementById("DivImagemProdDouble<IDProduto>").addEventListener("click", function(event){
+        event.preventDefault()
+      });
+    }
+    if( !sF$.fniOSversion() && !sF$.fnMacOsSafariversion() ){
+      removeImgLink();
+    } else if (sF$.fniOSversion() && sF$.fniOSversion()[0]>=13){
+      removeImgLink();
+    } else if(sF$.fnMacOsSafariversion() && sF$.fnMacOsSafariversion()[0]>13){
+      removeImgLink();
+    }
+    /*END-remove image link*/
+    /*remove spy2 from iOS<13*/
+    if( (sF$.fniOSversion() && sF$.fniOSversion()[0]<13) || (sF$.fnMacOsSafariversion() && sF$.fnMacOsSafariversion()[0]<13) ){
+      sF$.fnRemoveSpy2From("DivImagemProdDouble<prodId>","<URLProd>");
+      sF$.fnRemoveSpy2From("prod-list-container-grid-view","<URLProd>");
+      sF$.fnRemoveSpy2From("DivHomeDetails","<URLProd>");
+    }
+    /*END - remove spy2 from iOS<13*/
+
+
+});
+LibHotSite$.aFiltersHotsite.push(<ProdFiltersJS>);
+LibHotSite$.oDicCat[<prodId>]="<catNameSimple>";
+</script>
+</p254>
+
+<p255>
+<div class="home-prod-container loading-skeleton" <DataAttribute> id="DivProd<prodId>">
+  <div onclick="fcSpy$.openSmartModal('<URLProd>');">
+    <div class="DivHomeImagemProd skeleton-item" id="DivImagemProdDouble<prodId>" onclick="fcSpy$.openSmartModal('<URLProd>');" tabIndex="0"></div>
+    <div class="skeleton-item"><div class="home-prod-name text-overflow"><prodName></div></div>
+    <div class="home-prod-price skeleton-item">
+      <div id="idProdPrice<prodId>"></div> 
+      <div class="PriceAVistaLista" id="ProdDesc<prodId>"></div>
+    </div>
+  </div>
+  <div class="dynCartDisabled dynCartQty hidethis"><div class=dynCartAdd onclick="fcSpy$.openSmartModal('<URLProd>');"><dynCartDisabled></div></div>
+  <div id="dynCartContainer<prodId>" class=dynCartQty dyn-cart-qty="<prodId>" dyn-cart-stock="0<prodStock>" dyn-cart-a1="<desc1Val>" dyn-cart-a2="<desc2Val>" dyn-cart-a3="<desc3Val>" dyn-cart-d1="<descD1Val>" dyn-cart-d2="<descD2Val>" dyn-cart-d3="<descD3Val>" dyn-cart-color="<colorVal>" dyn-cart-price="<prodPriceNum>"></div>
+</div>
+<script>
+FCLib$.onReady(function(){sF$.fnProdOut("<prodImgMain>","<prodImgDet>","<URLProd>",<prodId>,"<prodNameFU>",<prodPriceNum>,<prodPriceOri>,"<prodRef>",<prodMaxInstallmentNum>)});
+</script>
+</p255>
