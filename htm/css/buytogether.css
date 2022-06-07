@@ -1,0 +1,64 @@
+/* Buy Together  Mar/2016 (v1) */
+#bTContainer hr{border-top:1px solid #cccccc !important;display:block;width:100% !important;height:1px !important;clear:both;}
+#bTContainer{min-height:1px;margin:0 auto;max-width:1306px;height:440px;}
+#bTEconomyItemConj{display:none;}
+
+.bTItem{min-height:250px;float:left;margin:0px 5px;padding:0 10px 0 10px;text-align:center;position:relative; }
+.bTItem:after{content:" ";background:url("/images/plus.svg?cccfc=1") no-repeat;background-size:100%;width:15px;height:15px;position:absolute;}
+.bTItensContainer > div:last-of-type:after{background:none;content:"";}
+.bTTotalBuy{float:left;}
+.bTTotalsPrices{position:relative;padding:10px;}
+.bTTotalBuy:before{content:" ";background:url("/images/equal.svg?cccfc=1") no-repeat;background-size:100%;width:15px;height:15px;position:absolute;left:-20px;top:90px;}
+.bTProdSelectName{width:100%;clear:both;padding:5px 0;position:relative;top:-10px;}
+.bTProdSelectName label{font-size:1rem;text-transform:uppercase;}
+.bTText{float:left;width:100%;clear:both;font-weight:bold;display:block;margin:20px 0 5px 0;line-height:50px;color:#212121;text-transform:uppercase;font-size:1rem;}
+.bTAddProd{position:absolute;left:4px;top:4px;z-index:99;font-size:0.8em;}
+.EqualSeparator{float:left;font-weight:bold;display:block;width:18px;margin:75px 0 0 0;}
+.EqualSeparator svg{width:100%;}
+.bTImgProd{width:100%;padding:15px 0px 0px 0px;height:165px;}
+.bTImgProd img{max-width:120px;max-height:120px;border:1px solid #cecece;margin-bottom:10px;margin-top:10px;padding:10px;background:#ffffff;}
+img.EstFotoProdConj{max-width:120px!important;max-height:120px!important;}
+#bTDescrProdConj li{list-style:none;margin:2px 0;}
+.bTProdName{min-height: 35px;font-size: 13px;font-weight: normal;display: block;word-wrap: break-word;overflow: hidden;line-height: 1.1rem;width: 200px;text-align: center;margin: 0 auto;}
+.bTIntProd{min-height:60px !important;}
+.bTPriceProd{text-align:center;height:90px !important;color:#212121}
+.FCfnShowEconomyConj{color:#0E72D2;text-align:center;font-size:13px;font-weight:bold;display:block;margin:10px 0;padding:7px 3px;}
+.bTPriceProd .FCCurrencyLabel{color:#212121}
+.ProductDet .bTPriceProd .FCCurrencyLabel{font-size:1rem!important;}
+.bTPriceProd .FCPrice .FCCurrencyLabel,.bTPriceProd .FCPrice .FCPriceValue,.bTPriceProd .FCPrice .FCPriceCent{font-size:1rem;color:#212121}
+#PricesCJ h3{color:#212121;font-size:1rem;font-weight:700;text-transform:uppercase;}
+.bTProdPrice{margin:10px 0 10px 0;font-weight:700;}
+.bTPricePorCont{display:block;margin:10px 0;}
+.bTPricePor,.bTOriPrice{font-weight:bold;font-size:1.2rem;color:#212121;}
+.bTEconomy{display:block;color:#0f836b;font-weight:normal!important}
+.bTPriceOff{font-size:14px;}
+#BotComprarCJ{margin:15px 0 0 0;}
+#BotComprarCJ a img{max-width:100%;}
+#BotComprarCJ a .buy-together-buy-button{background:#0f836b;color:#ffffff;text-align:center;font-size:1.5rem;font-weight:bold;}
+.buy-together-buy-button{padding:10px 15px}
+div.details-buy-together-add-to-cart{background:#0f836b;color:#ffffff;font-size:1.3rem;font-weight:700;max-width:150px;height:auto;position:relative;text-align:center;cursor:pointer;margin:5px 0;padding:5px 0px;float:left;text-align:center;min-width:150px;text-transform:uppercase;border-radius:4px}
+
+@media only screen and (max-width:320px){
+  .bTText{font-size:.8rem;}
+}
+
+@media only screen and (max-width:1024px){
+
+  .bTItem{width:100%;clear:both;min-height:200px;padding:0;}
+  .bTTotalsPrices{min-height:280px;float:none;margin:0 auto;display:table !important;}
+  .bTItem:after{right:50%;bottom:-15px;}
+  .bTImgProd img{max-width:120px;max-height:120px;}
+  .bTImgProd{padding:0;}
+  #bTContainer{height: auto;}
+  .bTItem:after{right:50%;bottom:25px;}
+  .bTText{line-height: 1.5rem;padding: 0 0 5px 0;font-size:.95rem;}
+}
+
+@media only screen and (min-width:1025px){
+  .bTItem{width:18%;min-height:0px;height:250px;}
+  .bTTotalsPrices{min-height:250px;float:left;margin:0px 5px;}
+  .bTTotalBuy{float:left;width:100%;}
+  .EqualSeparator{float:left;display:block;}
+  .bTItem:after{right:-15px;top:90px;}
+  .bTText{font-size:1.25rem;}
+}
