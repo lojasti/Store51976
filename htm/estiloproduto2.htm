@@ -1,0 +1,250 @@
+<!-- estiloproduto.htm : JSON Grid v2 2020  (Store 1) -->
+<ProdTop>
+<style>
+#idPagProdTop,#idTxtIntroFoundProdsFC,.left-bar,#idMobileFilters{display:none!important;}
+.customContainer{contain:layout;}
+.FCHome{margin-bottom:60px;}
+.ProductList .DivListProd{width:21%;}
+.ProductList .home-main-container{margin-top:78px;}
+.ProductList .MainHomeBoxTitFC{padding:0!important;}
+.ProductList .home-container-products{padding:0!important;}
+@media only screen and (max-width:1024px){
+  .ProductList .header-space-top{padding-top:0!important}
+  .ProductList .DivListProd{width:39.5%;}
+  .ProductList .home-main-container{margin-top:46px;}
+}
+</style>
+<script src='<PathTo file="htm/js/smartmodal-min.js">'></script>
+<link href="<PathTo file="htm/css/fc_grid_v1.css">" rel="stylesheet">
+<script src="<PathTo file="htm/js/fc_grid_v1.js">"></script>
+<script>var IsFramePage=false;</script>
+
+<!-- Script Filters -->
+<script>
+iQtdProds=<QtProd>;
+FCLib$.onReady(function(){
+  if(iQtdProds=="1"){
+    var sPages=sF$.fnGetID("idPageCountFC");
+    if(sPages)sPages.style.display="none";
+  }
+});
+OffsetAutoPagFC=290;
+var bTemSub=false;
+</script>
+
+<!-- Template for custom pages, including home -->
+<textarea id=customTemplate style=display:none>
+  <div class=FCHome>
+
+<section class="home-container">
+  <div class="home-container-box">
+
+    <!-- Banners -->
+    <div class="home-container-banners-middle">
+      <div class="home-container-three-banners">
+        <div class="home-container-three-banners-child home-container-three-banners-child-first">
+          <a href="/prod,offers,1,offers.htm" target="_self">
+            <img src="<storePath>images/home-banner-first.jpg" alt="Banner 5" loading="lazy">
+            <div class="home-container-three-banners-child-text"><var key="product-list-buy"></var></div>
+          </a>
+        </div>
+        <div class="home-container-three-banners-child home-container-three-banners-child-second">
+          <a href="/prod,releases,1,releases.htm" target="_self">
+            <img src="<storePath>images/home-banner-second.jpg" alt="Banner 6" loading="lazy">
+            <div class="home-container-three-banners-child-text"><var key="product-list-buy"></var></div>
+          </a>
+        </div>
+        <div class="home-container-three-banners-child home-container-three-banners-child-third">
+          <a href="/page,file,highlights.htm" target="_self">
+            <img src="<storePath>images/home-banner-third.jpg" alt="Banner 7" loading="lazy">
+            <div class="home-container-three-banners-child-text"><var key="product-list-buy"></var></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <div class="home-main-container">
+      <div class="home-container-title">
+        <div class="home-container-main-title">
+          <h1><var key="home-title-sales"></var></h1>
+        </div>
+      </div>
+      <div class="home-container-products">
+        <div class="home-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div>
+        <div class="home-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div>
+        <div class="home-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div>
+        <div class="home-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div>
+      </div>
+    </div>
+
+    <!-- Banner Separator -->
+    <div class="home-container-banners-full">
+      <a href="/categories.ehc">
+        <picture>          
+          <source media="(max-width:1024px)" srcset="<storePath>images/home-banner-middle-mob.jpg">
+          <img alt="Banner 8" src="<storePath>images/home-banner-middle.jpg" loading="lazy">          
+        </picture>
+      </a>
+    </div>
+
+    <!-- Products -->
+    <div class="home-main-container">
+      <div class="home-container-title">
+        <div class="home-container-main-title">
+          <h2><var key="home-title-last-releases"></var></h2>
+        </div>
+      </div>
+      <div class="home-container-products">
+        <div class="home-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div>
+        <div class="home-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div>
+        <div class="home-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div>
+        <div class="home-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <div class="home-main-container">
+      <div class="home-container-title">
+        <div class="home-container-main-title">
+          <h2><var key="home-title-featured-products"></var></h2>
+        </div>
+      </div>
+      <div class="home-container-products">
+        <div class="home-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div>
+        <div class="home-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div>
+        <div class="home-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div>
+        <div class="home-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div>
+      </div>
+    </div>
+
+    <!-- Sections Payment, Security, Delivery & Contact -->
+    <div class="home-container-badges">
+      <div class="home-container-badges-box">
+        <a href="<url-help>#Pagamento">
+          <div class="home-badges-image"><img src="<PathTo file="images/icon-banner-payment.jpg">" alt="Formas de Pagamento" loading="lazy"></div>
+          <h5><var key="home-section-payment"></var></h5>
+        </a>
+      </div>
+      <div class="home-container-badges-box">
+        <a href="<url-help>#Seguranca">
+          <div class="home-badges-image"><img src="<PathTo file="images/icon-banner-security.jpg">" alt="Segurança" loading="lazy"></div>
+          <h5><var key="home-section-security"></var></h5>
+        </a>
+      </div>
+      <div class="home-container-badges-box">
+        <a href="<url-help>#Entregas">
+          <div class="home-badges-image"><img src="<PathTo file="images/icon-banner-delivery.jpg">" alt="Envio & Frete" loading="lazy"></div>
+          <h5><var key="home-section-delivery"></var></h5>
+        </a>
+      </div>
+      <div class="home-container-badges-box">
+        <a href="<url-contact>">
+          <div class="home-badges-image"><img src="<PathTo file="images/icon-banner-contact.jpg">" alt="Fale Conosco" loading="lazy"></div>
+          <h5><var key="home-section-contact-us"></var></h5>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+</textarea>
+
+<!-- Template for each product in custom pages, including home (optional. If not exists, use textarea with id=prodListTemplate) -->
+<textarea id=prodCustomTemplate style=display:none>
+<p255>
+  <div class=prodBox>
+    <FormProd>
+
+    <div class="home-prod-container" <DataAttribute> id="DivProd<prodId>" onclick="fcSpy$.openSmartModal('<URLProd>');">
+      <div class="DivHomeImagemProd" id="DivImagemProdDouble<prodId>" onclick="fcSpy$.openSmartModal('<URLProd>');" tabIndex="0"></div>
+      <div class="home-prod-name text-overflow"><prodName></div>
+      <div class="home-prod-price">
+        <div id="idProdPrice<prodId>"></div> 
+        <div class="PriceAVistaLista" id="ProdDesc<prodId>"></div>
+      </div>
+      <div class="home-spy-details-container">
+        <div class="DivHome-wishlist"><span id=ProdWL<prodId>></span><script>WL$.fnButtonAddToWishlist(<prodId>);</script></div>
+      </div>
+      <div id=zFProdSoldOut<prodId>></div>
+    </div>
+    </FormProd>
+  </div>
+  <script>
+  sF$.fnProd("<prodImgMain>","<prodImgDet>","<URLProd>",<prodId>,"<prodNameFU>",<prodPriceNum>,<prodPriceOri>,"<prodRef>",<prodMaxInstallmentNum>,<prodStock>,<subprodTotalStock>,<bHasSubprod>,<bMinPrice>);
+  </script>
+</p255>
+</textarea>
+<div id=customContainer class=customContainer></div>
+<script>
+sF$.iMaxLazyProds=4;
+pt$.init();
+</script>
+</ProdTop>
+
+<ProdList>
+<div style=display:none>
+  <textarea id=prodName<prodId>><prodName></textarea>
+  <textarea id=catName<prodId>><catNameSimple></textarea>
+</div>
+<script>
+  pt$.aProdTags.push({
+    prodNameFU:"<prodNameFU>",
+    prodImgMain:"<prodImgMain>",
+    prodImgDet:"<prodImgDet>",
+    prodId:<prodId>,
+    URLProd:"<URLProd>",
+    prodName:document.getElementById("prodName<prodId>").value,
+    catName:document.getElementById("catName<prodId>").value,
+    prodRef:"<prodRef>",
+    dataattribute:"<dataattribute>",
+    prodStock:(""=="<prodStock>"?99999999:0<prodStock>),
+    prodPriceOri:"<prodPriceOri>",
+    prodPriceNum:<prodPriceNum>,
+    prodMaxInstallmentNum:<prodMaxInstallmentNum>,
+    subprodTotalStock:0,
+    bHasSubprod:false,
+    bMinPrice:false,
+    aSubProdTags:[]
+  });
+
+  pt$.oCurrentProd=pt$.aProdTags[pt$.aProdTags.length-1];
+  pt$.aSubProdTags=[];
+  <sub>
+      pt$.aSubProdTags.push({
+      prodImgMain:"<prodImgMain>",
+      prodImgDet:"<prodImgDet>",
+      prodId:<prodId>,
+      prodRef:"<prodRef>",
+      dataattribute:"<dataattribute>",
+      prodStock:(""=="<prodStock>"?99999999:0<prodStock>),
+      prodPriceOri:"<prodPriceOri>",
+      prodPriceNum:<prodPriceNum>,
+      colorVal:"<colorVal>",
+      colorRGB:"<colorRGB>",
+      desc1Val:"<desc1Val>",
+      desc2Val:"<desc2Val>",
+      desc3Val:"<desc3Val>",
+      descD1Val:"<descD1Val>",
+      descD2Val:"<descD2Val>",
+      descD3Val:"<descD3Val>"
+    });
+    pt$.oCurrentProd.subprodTotalStock+=<prodStock>.0;
+    pt$.oCurrentProd.bHasSubprod=true;
+  </sub>
+  if(pt$.oCurrentProd.bHasSubprod)pt$.bListHasSubprod=true;
+  pt$.oCurrentProd.aSubProdTags=pt$.aSubProdTags;
+</script>
+</ProdList>
+
+<ProdDet><!-- Prod Det --></ProdDet>
+
+<ProdAmp><!-- Prod Amp --></ProdAmp>
+<ProdBottom>
+<script>
+function FuncAutoPagEnd(){
+  pt$.fnExecProdList();
+}
+</script>
+</ProdBottom>
