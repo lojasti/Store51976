@@ -1,0 +1,20 @@
+/* Fastcommerce - Store 4 Async - 2021 (v1) */
+
+/* Colors */
+header{background:<tag-FCCSSMainColor>}
+.HeaderCartNumberProds{background-color:<tag-FCCSSSecondMainColor>}
+.main-product-block-container-title-underline{border-top:4px solid <tag-FCCSSMainColor>}
+.main-info-separator-img{background:<tag-FCCSSMainColor>}
+.footer-newsletter-form-button button.footer-newsletter-submit-button{background:<tag-FCCSSMainColor>}
+#ContentFil .DivFiltrarPor .Label{background:<tag-FCCSSMainColor>}
+.ProductDet #idEstNoCommentsClickProdOpFC a{background:<tag-FCCSSMainColor>}
+
+.ProductList .DivFiltrandoPor span.Label{background:<tag-FCCSSMainColor>}
+.ProductDet #idEstNoCommentsClickProdOpFC a{background:<tag-FCCSSMainColor>}
+.checkout-header-logo{background:<tag-FCCSSMainColor>}
+.main-product-block-special-separator .main-product-block-special-separator-children{background-color:<tag-FCCSSSecondMainColor>}
+.prod-list-progress-bar>div{background-color:<tag-FCCSSSecondMainColor>}
+
+@media only screen and (min-width:1025px){
+  .main-product-block-special-sales .home-container-products-children{background-color:<tag-FCCSSSecondMainColor>}
+}
