@@ -1,0 +1,165 @@
+</div>
+<!-- End Aside - Don't remove -->
+
+<footer>
+  <!-- Newsletter -->
+  <div class="footer-newsletter-container">
+    <div class="footer-newsletter-child">
+      <div class="footer-newsletter-text">
+        <h3><var key="theme-4-footer-title-newsletter-txt"></var></h3>
+        <p><var key="theme-4-footer-subtitle-newsletter-txt"></var></p>
+      </div>
+      <div class="footer-newsletter-form">
+        <form name="FormCadNewsletter" method="GET" action="<url-newsletter>" onsubmit="return ValidaCadNewsletter(this);">
+          <input type="hidden" name="formatohtml" value="true">
+          <div class="footer-newsletter-form-container">
+            <div class="footer-newsletter-form-input"><input type="email" name="Email" class="FooterNewsletterInput" id="footer-newsletter-box-text" aria-label="" placeholder=""></div>
+            <div class="footer-newsletter-form-button"><button class="footer-newsletter-submit-button" type="submit" name="ok" value="Enviar"><var key="footer-section-newsletter-text-btn"></var></button></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>  
+  <!-- Client History -->
+  <div class="footer-history">
+    <div id="idPageHistory"></div>
+  </div>
+  <div class="footer-container">
+    <!-- Menu -->
+    <div class="footer-menu-container">
+      <!-- Menu Product -->
+      <div class="footer-menu-container-child">
+        <div class="footer-mainbar-menu-one ">
+          <h4 class="font-bold footer-accordion"><var key="footer-section-title-product"></var></h4>
+          <ul class="footer-menu font-regular footer-accordion-panel">
+            <li><a href="/"><var key="footer-section-title-home"></var></a></li>
+            <li><a href="<url-categories>"><categories></a></li>
+            <li><a href="<url-sale>"><var key="footer-section-title-sales"></var></a></li>
+            <li><a href="<url-release>"><var key="footer-section-title-releases"></var></a></li>
+            <li><a href="/highlights"><var key="footer-section-title-highlights"></var></a></li>
+            <li><a href="<url-advanced-search>"><var key="footer-section-title-search"></var></a></li>
+          </ul>
+        </div>   
+      </div>
+      <!-- Menu Account -->  
+      <div class="footer-menu-container-child">
+        <div class="footer-mainbar-menu-two">
+          <h4 class="font-bold footer-accordion"><var key="footer-section-title-my-account"></var></h4>
+          <ul class="footer-menu font-regular footer-accordion-panel">
+            <li><a href="<url-add-product>"><var key="footer-section-title-shopping-cart"></var></a></li>
+            <li><a href="<url-account>?orders=1#Orders"><var key="footer-section-title-my-orders"></var></a></li>
+            <li><a href="<url-account>?register=1#Register"><var key="footer-section-title-register"></var></a></li>
+            <li><a href="<url-register>?pp=3" id="idLinkLoginFC"><var key="footer-section-title-login"></var></a></li>
+            <li><a href="<url-newsletter>"><var key="footer-section-title-newsletter"></var></a></li>
+          </ul>
+        </div>  
+      </div>
+      <!-- Menu Info -->
+      <div class="footer-menu-container-child">
+        <div class="footer-mainbar-menu-three">
+          <h4 class="font-bold footer-accordion"><var key="footer-section-title-information"></var></h4>
+          <ul class="footer-menu font-regular footer-accordion-panel">
+            <li><a href="<url-help>"><var key="footer-section-title-help-center"></var></a></li>
+            <li><a href="<url-news>"><var key="footer-section-title-news"></var></a></li>
+            <li><a href="<url-help>#Entregas"><var key="footer-section-title-delivery"></var></a></li>
+            <li><a href="<url-help>#Seguranca"><var key="footer-section-title-security"></var></a></li>
+            <li><a href="<url-contact>"><var key="footer-section-title-contact-us"></var></a></li>
+            <li>
+              <div class="dark-mode-checkbox-container">
+                <input id="dark-mode" class="btn-toggle" type="checkbox">
+                <label class="dark-mode-label" for="dark-mode"><var key="dark-mode-text"></var></label>
+              </div>
+            </li>
+          </ul> 
+        </div> 
+      </div>
+      <!-- Menu Company -->
+      <div class="footer-menu-container-child">
+        <div  class="footer-mainbar-menu-four">
+          <div class="footer-mainbar-newsletter-field">
+            <h4 class="font-bold"><var key="footer-section-title-support"></var></h4>
+            <ul class="footer-menu font-regular footer-menu-company">
+              <li><a href="tel:<companyPhone>"><span class="footer-phone-number-icon"><img src="<storePath>images/ic_phone_2.svg" width="20" height="20" loading="lazy" alt="Phone"></span> <companyPhone></a></li>
+              <li><a href="<url-contact>"><span class="footer-email-icon"><img src="<storePath>images/ic_email_2.svg" width="20" height="20" loading="lazy" alt="E-mail"></span> <contactMail></a></li>
+              <li><span class="footer-company-icon"><img src="<storePath>images/ic_map_2.svg" width="20" height="20" loading="lazy" alt="E-mail"></span> <companyAddress></a></li>
+            </ul>             
+            <ul class="footer-share-container">
+              <li id="idShareFooter">
+                <img class="EstImgShareFacebook">
+                <img class="EstImgShareTwitter">
+                <img class="EstImgShareInstagram">
+                <img class="EstImgShareYoutube">
+              </li>
+            </ul>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <!-- Payments -->
+    <div class="footer-payment-security-container">
+      <div>
+       <!-- Payments -->
+       <div id="footer-payments" class="footer-container-payment-box hidethis">
+          <ul class="FooterULPaymentFC">
+            <li><img src="<storePath>images/fc-mastercard-2.svg" loading="lazy" width="60" height="39" alt="MasterCard"></li>
+            <li><img src="<storePath>images/fc-visa.svg" loading="lazy" width="60" height="39" alt="Visa"></li>
+            <li><img src="<storePath>images/fc-diners.svg" loading="lazy" width="60" height="39" alt="Diners"></li>
+            <li><img src="<storePath>images/fc-pix.svg" loading="lazy" width="60" height="39" alt="PIX"></li>
+            <li><img src="<storePath>images/fc-deposito.svg" loading="lazy" width="60" height="39" alt="Depósito bancário"></li>
+            <li><img src="<storePath>images/fc-boleto.svg" loading="lazy" width="60" height="39" alt="Boleto Bancário"></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Security -->
+      <div>
+      <div class="footer-container-security-box">
+        <a href="https://www.fastcommerce.com.br/security-badge.ehc?url=<StoreDomain>" target="_blank" rel="noopener" class="footer-security-badge-1"><img src="/security-badge.ehc" loading="lazy" width="123" height="37" alt="Safe Site" title="Safe Site"></a>
+        <a href="https://www.google.com/transparencyreport/safebrowsing/diagnostic/?hl=pt-BR#url=<StoreDomain>" target="_blank" rel="noopener" class="footer-security-badge-3"><img src="/images/google-safe-site.svg?cccfc=1" loading="lazy" width="111" height="40" alt="Google Safe Browsing" title="Google Safe Browsing"></a>
+      </div>
+      </div>
+    </div>
+    <!-- Company Info -->
+    <div class="footer-copyright-tec-container">
+      <div>
+      <div class="footer-container-company-box">
+        <p>Copyright © <span id="FooterFullYear"></span> <strong><storeName></strong> <var key="footer-cnpj"></var> <CompanyDocument> <var key="theme-4-footer-copyright"></var></p>
+      </div>
+      <div class="footer-container-tec-box">
+        <p><a href="<url-oursite>" target="_blank" rel="noopener"><var key="footer-section-powered-by"></var> <b><name-oursite></b></a></p>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cookie Policy alert -->
+  <div class="cookiewarning bg-warning" id="cookie-law">
+    <div class="cookiewarning-position">
+      <h4><var key="footer-cookie-policy-title"></var></h4>
+      <p><var key="footer-cookie-policy-own-third-text"></var></p>
+      <p><a href="#" id="cookie-url"><var key="footer-cookie-policy-more-information-text"></var></a></p>
+      <div class="cookiewarning-position-btn"><span class="cookiewarning-btn"><var key="footer-cookie-policy-accept-btn"></var></span></div>
+    </div>
+  </div>
+</footer>
+
+<!-- Final includes -->
+<script>
+FCLib$.loadAsyncCSS('<PathTo file="htm/css/jquery_ui.css">');
+FCLib$.loadAsyncCSS('/inc.ehc?f=css/store-async.css&y=<Y>');
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.1/jquery-ui.min.js" defer></script>
+<script src='<PathTo file="htm/js/autosuggest-min.js">' defer></script>
+<script src='<PathTo file="htm/js/mega-menu-dropdown-min.js">'></script>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<link href="/css/vex/v4.0.1/vex.css?cccfc=1" rel="stylesheet">
+<link href="/css/vex/v4.0.1/vex-theme-default.css?cccfc=1" rel="stylesheet">
+<script>
+sF$.fnLoginUserName("<customerName>","<customerImage>");
+fnFooter();
+
+if(FC$.Page=="Cart" && (FC$.TypeFrt==3 || FC$.TypeFrt==4)){
+  var iValorCesta=<ValorCesta>;
+  fnCustomizeCart();
+}
+
+</script>
